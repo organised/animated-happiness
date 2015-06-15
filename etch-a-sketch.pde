@@ -10,7 +10,7 @@ void setup()
     
     size(235,192);
     background(255);   
-    b = loadImage("onlineetch.gif"); // just a little interface graphic
+    b = loadImage("onlineetch.gif"); // just a little interface graphic Download from http://i.imgur.com/nGFSJcI.gif?1
     image(b,0,0);
 
 }
