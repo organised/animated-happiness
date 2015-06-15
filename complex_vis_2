@@ -1,0 +1,22 @@
+//http://i.imgur.com/Bpo5pq2.png
+
+size(500,500);
+background(0);
+stroke(#FFFFFF);
+for(int j=0; j<500; j+=7)
+
+
+{
+  
+stroke(random(255),21,230);
+for(int i = 0; i<width; i+=2)
+{
+//line((i^j^45),(i^i^0),int(log(i*45)),500);
+point(int(log(i)*80),(i^j^3));
+//point(i,tan(i^j^4)*420);
+//point(i,sin(i^j^4)*485);
+
+
+}
+}
+save("operator.tif");
