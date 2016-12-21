@@ -39,7 +39,6 @@ for (int i=0; i<rows; i++)
     color c  =myArray[i][j]; 
     fill(c);
     rect(50+i*40, 50+j*40, 20, 20);
-    // translate(0,0,(i/PI)*mouseX/80);
   }
 }
 
