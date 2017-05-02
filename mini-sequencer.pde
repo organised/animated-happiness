@@ -4,6 +4,7 @@
 // It's not the most efficient way of doing it, delays, literally stop your programme from running
 // Possibly better to have a way to only execute when needed
 // or play a noise and change it's amplitude to on or off. 
+// image to use : http://imgur.com/a/ZwFPd
 
 
 
