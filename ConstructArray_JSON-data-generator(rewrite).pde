@@ -26,12 +26,12 @@ String hexcol="";
 String r_temp,g_temp,b_temp;
 String colourString; // used to store the values rrr,ggg,bbb for the text file.
 String StringtoWritetoFile;
+color tempcol;
 
 
 
 
 
-color tempcol = color(0, 0, 0);
 
 
 
@@ -45,21 +45,23 @@ void setup()
   img=loadImage("10by10.png");
   image(img, 0,0);
   noLoop();
-  
   output = createWriter("data.txt"); 
 }
 
 
 void draw()
 {
-
+  // tempcol=get(0,0);
+  // println(tempcol);
+  
+  
   // put sample point colours from the image into a 2D array
-  for (int i=0; i<rows; i++)
+  for (int i=0; i< rows; i++)
   {
 
     for (int j=0; j<cols; j++)
     {
-      tempcol=get(i,j);
+      tempcol=get(j,i);
       
      //println(hex(tempcol));  //shows the values as a hex colour 
      //println("Red:"+red(tempcol)+" Green:"+green(tempcol)+" Blue:"+blue(tempcol)); 
@@ -94,5 +96,3 @@ void draw()
   output.close(); // Finishes the file
   exit(); // Stops the program
 }
-
-
