@@ -83,11 +83,11 @@ void draw()
       g_temp = str(int(green(tempcol))); 
       b_temp = str(int(blue(tempcol))); 
 
-      //sample:  [255,255,255]
+      //sample:  ["255,255,255"]
 
 
 
-      colourString = "["+r_temp+","+g_temp+","+b_temp+"]"; 
+      colourString = "[\""+r_temp+","+g_temp+","+b_temp+"\"]"; 
       //println(colourString);
 
 
