@@ -43,10 +43,10 @@ PImage img;
 void setup()
 {
   size(10, 10);
-  img=loadImage("10by10.png");
+  img=loadImage("5.png");
   image(img, 0, 0);
   noLoop();
-  output = createWriter("data.txt");
+  output = createWriter("5.txt");
 }
 
 
